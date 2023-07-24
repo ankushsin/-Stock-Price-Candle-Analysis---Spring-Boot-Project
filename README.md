@@ -3,6 +3,18 @@
 ## Description of the app
 This app is a web application that provides a service for analyzing stock price movement.
 
+### Sample code data
+   {
+      "lastTradeTime": "2023-07-21T10:30:00",
+      "quotationLot": 100,
+      "tradedQty": 5000,
+      "openInterest": 200,
+      "open": 100.5,
+      "high": 102.0,
+      "low": 100.0,
+      "close": 101.0
+    }
+
 ## Api Endpoints
 
 * CustomerContoller:-
