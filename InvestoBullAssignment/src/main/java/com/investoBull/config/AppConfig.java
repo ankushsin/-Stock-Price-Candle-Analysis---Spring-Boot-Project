@@ -48,12 +48,8 @@ public class AppConfig {
 	
 	private static class MvcRequestMatcher implements RequestMatcher {
         @Override
-<<<<<<< HEAD
         public boolean matches(HttpServletRequest request) {
             
-=======
-        public boolean matches(HttpServletRequest request) {            
->>>>>>> aec699066f44470e76a193ff6ff17eecbf8ca3bb
             return false;
         }
     }
