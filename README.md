@@ -1,5 +1,7 @@
 
 # -Stock-Price-Candle-Analysis---Spring-Boot-Project
+## Description of the app
+This app is a web application that provides a service for analyzing stock price movement.
 
 ## Api Endpoints
 
@@ -10,13 +12,13 @@
 
 2. Login
    Endpoint:- http://localhost:8089/customers/signIn (GET)
-   Description:- This is authenticating user.
+   Description:- This is authenticating the user.
 * StockController:-
 1. Save Candles to DB
    Save Stock Candle:
    HTTP Method: POST
    URL: URL: http://localhost:8089/api/stock-candles
-   Description:- This is for storing data from JSON file to DB.
+   Description:- This is for storing data from JSON files to DB.
 
 2. Get Stock Candle by ID:
    HTTP Method: GET
@@ -34,7 +36,7 @@
    HTTP Method: GET
    URL: http://localhost:8089/api/stock-candles/orb-candle-time?minutes={minutes}
 
-8. Generate Candles with Interval:
+8. Generate Candles with Intervals:
    HTTP Method: GET
    URL: http://localhost:8089/api/stock-candles/generate-candles?intervalInMinutes={intervalInMinutes}
 
