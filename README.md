@@ -3,7 +3,7 @@
 ## Description of the app
 This app is a web application that provides a service for analyzing stock price movement.
 
-### Sample code data
+## Sample code data
    {
       "lastTradeTime": "2023-07-21T10:30:00",
       "quotationLot": 100,
