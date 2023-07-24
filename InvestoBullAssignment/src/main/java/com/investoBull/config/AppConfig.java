@@ -49,8 +49,7 @@ public class AppConfig {
 	private static class MvcRequestMatcher implements RequestMatcher {
         @Override
         public boolean matches(HttpServletRequest request) {
-            // Implement your logic here to match Spring MVC endpoints
-            // For example, check the request path or other attributes to determine if it's a Spring MVC endpoint.
+            
             return false;
         }
     }

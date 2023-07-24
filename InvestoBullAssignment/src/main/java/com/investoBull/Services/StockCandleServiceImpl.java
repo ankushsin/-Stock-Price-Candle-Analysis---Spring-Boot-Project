@@ -120,10 +120,7 @@ public class StockCandleServiceImpl implements StockCandleService {
     
     // Method to merge candles based on your specific requirement
     private Candle mergeCandles(List<Candle> candles) {
-        // Implement the logic to merge candles based on the interval
-        // For example, you could calculate the average of the open, high, low, and close prices.
-        // Update the quotation lot, traded quantity, etc. as needed.
-        // This logic will depend on your specific use case.
+       
 
         // Here's a simple example where we take the first and last candles to create a new one:
         Candle firstCandle = candles.get(0);

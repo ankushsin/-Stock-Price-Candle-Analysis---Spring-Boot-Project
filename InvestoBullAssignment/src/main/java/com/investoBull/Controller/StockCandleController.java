@@ -24,6 +24,65 @@ public class StockCandleController {
 	    @Autowired
 	    private StockCandleService stockCandleService;
 	
+	    
+//	    ==================================================================
+//	      {
+//	    	  
+//	    	  "candles": [
+//	    	   {
+//	    	      "lastTradeTime": "2023-07-21T10:30:00",
+//	    	      "quotationLot": 100,
+//	    	      "tradedQty": 5000,
+//	    	      "openInterest": 200,
+//	    	      "open": 100.5,
+//	    	      "high": 102.0,
+//	    	      "low": 100.0,
+//	    	      "close": 101.0
+//	    	    },
+//	    	    {
+//	    	      "lastTradeTime": "2023-07-21T10:45:00",
+//	    	      "quotationLot": 120,
+//	    	      "tradedQty": 6000,
+//	    	      "openInterest": 180,
+//	    	      "open": 101.0,
+//	    	      "high": 103.5,
+//	    	      "low": 100.5,
+//	    	      "close": 102.5
+//	    	    },
+//	    	    {
+//	    	      "lastTradeTime": "2023-07-21T11:00:00",
+//	    	      "quotationLot": 80,
+//	    	      "tradedQty": 4000,
+//	    	      "openInterest": 160,
+//	    	      "open": 102.5,
+//	    	      "high": 104.0,
+//	    	      "low": 102.0,
+//	    	      "close": 103.0
+//	    	    },
+//	    	    {
+//	    	      "lastTradeTime": "2023-07-21T11:15:00",
+//	    	      "quotationLot": 150,
+//	    	      "tradedQty": 7000,
+//	    	      "openInterest": 170,
+//	    	      "open": 103.0,
+//	    	      "high": 105.0,
+//	    	      "low": 102.5,
+//	    	      "close": 104.5
+//	    	    },
+//	    	    {
+//	    	      "lastTradeTime": "2023-07-21T11:30:00",
+//	    	      "quotationLot": 110,
+//	    	      "tradedQty": 5500,
+//	    	      "openInterest": 190,
+//	    	      "open": 104.5,
+//	    	      "high": 106.0,
+//	    	      "low": 104.0,
+//	    	      "close": 105.0
+//	    	    }
+//	    	  ]
+//	    	}
+//	   
+//	    FOR SAVING THE REQUIRED DATA == THE SAMPLE CODE IS HERE
 	   
 
 	    @PostMapping
@@ -59,12 +118,22 @@ public class StockCandleController {
 		    stockCandleService.deleteStockCandleById(id);
 		    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
+		
+
+		
+//		=============================================
+//		http://localhost:8080/api/stock-candles/orb-candle-time?minutes=15
+//		ORB Generation
 
 		@GetMapping("/orb-candle-time")
 		public ResponseEntity<String> getOrbCandleTime(@RequestParam int minutes) {
 		    String result = stockCandleService.getOrbCandleTime(minutes);
 		    return new ResponseEntity<>(result, HttpStatus.OK);
 		}
+		
+//		==================================================
+//		http://localhost:8080/api/stock-candles/generate-candles?intervalInMinutes=15
+//			GENERATE CANDLES in intervals
 
 		@GetMapping("/generate-candles")
 		public ResponseEntity<List<StockCandle>> generateCandlesWithInterval(@RequestParam int intervalInMinutes) {

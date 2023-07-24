@@ -32,10 +32,7 @@ public class CustomerController {
 	private PasswordEncoder passwordEncoder;
 	
 	
-	@GetMapping("/hello")
-	public String testHandler() {
-		return "Welcome to Spring Security";
-	}
+	
 	
 	@PostMapping("/customers")
 	public ResponseEntity<Customer> saveCustomerHandler(@RequestBody Customer customer){
