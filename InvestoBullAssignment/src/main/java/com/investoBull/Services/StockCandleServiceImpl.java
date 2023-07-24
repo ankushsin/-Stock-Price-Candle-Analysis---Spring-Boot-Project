@@ -120,13 +120,9 @@ public class StockCandleServiceImpl implements StockCandleService {
     
     // Method to merge candles based on your specific requirement
     private Candle mergeCandles(List<Candle> candles) {
-<<<<<<< HEAD
        
-=======
-        
->>>>>>> aec699066f44470e76a193ff6ff17eecbf8ca3bb
 
-        
+        // Here's a simple example where we take the first and last candles to create a new one:
         Candle firstCandle = candles.get(0);
         Candle lastCandle = candles.get(candles.size() - 1);
 
