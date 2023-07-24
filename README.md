@@ -1,5 +1,5 @@
 
-# -Stock-Price-Candle-Analysis---Spring-Boot-Project
+# Stock-Price-Candle-Analysis---Spring-Boot-Project
 ## Description of the app
 This app is a web application that provides a service for analyzing stock price movement.
 
